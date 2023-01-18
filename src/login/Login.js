@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
+import {Link} from 'react-router-dom'
+import './Style.css'
 
 export const Login = () => {
   const [loginForm, setLoginForm] = useState({
@@ -20,14 +22,8 @@ export const Login = () => {
     console.log("onLoginSubmit", loginForm);
   };
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Form onSubmit={onLoginSubmit} style={{ width: "200px" }}>
+    <div className="loginpa">
+      <Form onSubmit={onLoginSubmit} style={{ width: "227px" }}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email</Form.Label>
           <Form.Control
@@ -55,10 +51,12 @@ export const Login = () => {
             label="Accept terms and conditions"
           />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button className="bbt" variant="primary" type="submit">
           Login
         </Button>
+        <h6>Create new accoount <Link to="signup">Signup</Link></h6> 
       </Form>
-    </div>
+      </div>
+   
   );
 };

@@ -1,0 +1,23 @@
+
+
+
+.bbt{
+    width: 200px;
+    
+}
+.loginpa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    width: 300px;
+    height: 400px;
+    margin-left: 500px;
+    border:2px solid black;
+    border-radius: 5px;
+    
+
+}
+.loginpa{
+    margin-top: 20px;
+}
